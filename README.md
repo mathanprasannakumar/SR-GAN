@@ -29,7 +29,6 @@ A generator model that will super resolve the low resoluted image. Here i traine
 <ul>
 	<li><h5> SRRESNET </h5>
 	<li> In the SRRESNET model ,it contains three block , convolution  block , subpixel block and residual block </li>
-
 	<li> Low resoluted image is passed to the convolution layer and then to the  resnet contains 16 residual block following Batch norm and Leakey relu in each  residual block </li>
 	<li> The result from the resnet is passed to the convolution layer and then to the 2 subpixel block for upscale the image by a factor of four where each will upscale by a factor of 2 .</li>
 	<li>Finally the result is passed to a convolution layers with sigmoid activation </li>
